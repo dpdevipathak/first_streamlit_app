@@ -48,4 +48,4 @@ streamlit.dataframe(my_data_rows)
 # Let's put a pick list here so they can pick the fruit they want to include 
 Curr_my_data_rows=streamlit.multiselect("Pick some fruits:", list(my_data_rows.index))
 Curr_fruits_to_show=my_data_rows.loc[Curr_my_data_rows]
-streamlit.text("Thanks for selecting" + Curr_my_data_rows)
+
