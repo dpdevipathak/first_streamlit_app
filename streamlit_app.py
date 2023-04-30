@@ -47,10 +47,10 @@ try:
 
 
 #dont run any thing past here while we troubleshoot
-streamlit.stop()
+#streamlit.stop()
 # to check connector
 
-
+import snowflake.connector
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("SELECT * from fruit_load_list")
