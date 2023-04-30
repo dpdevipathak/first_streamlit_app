@@ -47,7 +47,7 @@ try:
 
 
 #dont run any thing past here while we troubleshoot
-streamlit.stop()
+#streamlit.stop()
 # to check connector
 
 
