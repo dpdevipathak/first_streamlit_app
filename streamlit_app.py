@@ -45,8 +45,4 @@ my_data_rows = my_cur.fetchall()
 streamlit.text("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
-# Let's put a pick list here so they can pick the fruit they want to include 
-my_data_rows = my_data_rows.set_index('Fruit')
-add_myfruit=streamlit.select("Add some fruits:",list(my_data_rows.index))
-streamlit.write("Thanks for Adding",add_myfruit)
 
