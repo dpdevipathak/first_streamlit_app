@@ -41,13 +41,13 @@ try:
   else:
     back_from_function = get_fruityvice_data(fruit_choice)
     streamlit.dataframe(back_from_function)
-  streamlit.error()
+
 
 
 
 
 #dont run any thing past here while we troubleshoot
-#streamlit.stop()
+streamlit.stop()
 # to check connector
 
 
